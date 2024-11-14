@@ -7,8 +7,7 @@ A guide to customize your terminal with Zsh, Oh My Zsh, Powerlevel10k, and cool 
 
 This guide will show you how to customize your Linux or macOS terminal using **Powerlevel10k** and the **Zsh** shell for a more personalized and efficient experience.
 
-![Terminal Screenshot]([![Uploading image.png…]()
-)
+[![Uploading image.png…]
 
 ---
 
@@ -103,19 +102,60 @@ Restart your terminal. The Powerlevel10k configuration wizard should start autom
 p10k configure
 ```
 
+## Enable Command Suggestions
+
+To enhance your terminal experience, you can enable **command suggestions** and **syntax highlighting**.
+
+### Step 1: Install Zsh Autosuggestions
+This plugin suggests commands based on your history as you type.
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+```
+
+### Step 2: Install Zsh Syntax Highlighting
+This plugin highlights commands and syntax for easier readability.
+
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+```
+
+### Step 3: Update .zshrc
+Open your `.zshrc` file and add the following lines:
+
+```bash
+# Enable Zsh Autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Enable Zsh Syntax Highlighting
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+
+Ensure these lines are **below** the Powerlevel10k initialization line:
+
+```bash
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+```
+
+### Step 4: Apply Changes
+Reload your terminal configuration:
+
+```bash
+source ~/.zshrc
+```
+
+### Step 5: Verify Command Suggestions
+- **Command Suggestions:** Start typing a previously used command to see it suggested in a lighter color.
+- **Syntax Highlighting:** Watch for colorful syntax highlighting while typing commands.
+
+Enjoy a smarter terminal experience! 🎉
 Follow the prompts to customize your terminal's appearance.
 
 ---
 
-## Video Demo
-
-For a step-by-step video tutorial, check out this demo:
-
-[![P10K Demo](https://img.youtube.com/vi/j9IAvIAOVSc/0.jpg)](https://www.youtube.com/watch?v=j9IAvIAOVSc)
-
 ### Subscribe for More!
 
-For more tutorials, subscribe to [TechChip YouTube Channel](http://youtube.com/techchipnet).
+For more tutorials, subscribe to [Cyber Tech Ajju YouTube Channel]([http://youtube.com/techchipnet](https://youtube.com/@cybertechajju?si=rpQqtCgZ4eE12Rsa)).
 
 ---
 
