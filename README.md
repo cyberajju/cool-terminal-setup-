@@ -7,7 +7,8 @@ A guide to customize your terminal with Zsh, Oh My Zsh, Powerlevel10k, and cool 
 
 This guide will show you how to customize your Linux or macOS terminal using **Powerlevel10k** and the **Zsh** shell for a more personalized and efficient experience.
 
-![Terminal Screenshot]([https://github.com/user-attachments/assets/be4ca301-e242-4703-b66c-5f4a28f8c193](https://www.howtogeek.com/supercharge-your-command-prompt-with-zsh-and-oh-my-zsh/))
+![Terminal Screenshot]([![Uploading image.png…]()
+)
 
 ---
 
